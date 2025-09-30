@@ -30,11 +30,11 @@ def verificar_empate():
    return True
 
 def menu():
-    print("JOGO DA VELHA\n\n1 jogaodor (1)\n2 Jogadores (2)\nSair (3)")
+    print("JOGO DA VELHA\n\n1 jogaodor (1)\n2 Jogadores (2)")
     try:
         quantidade_jogadores = int(input("Entre com a quantidade de jogadores: "))
-        if quantidade_jogadores not in (1, 2, 3):
-            print("Entrada inválida. Digite 1, 2 ou 3.")
+        if quantidade_jogadores not in (1, 2):
+            print("Entrada inválida. Digite 1 ou 2")
             return None
         return quantidade_jogadores
     except:
@@ -126,6 +126,5 @@ def jogar():
                print("Entrada inválida. Escolha números entre 1 e 3.")
 
            
-       
 
 jogar()
